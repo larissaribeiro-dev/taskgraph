@@ -218,7 +218,7 @@ taskgraph/
 - A pontuação é recalculada para cada tarefa a cada `next` ou `plan`, com custo da ordem de V · (V + E). É instantâneo com centenas de tarefas e não foi pensado para dezenas de milhares.
 - Os prazos usam a data local da máquina, sem noção de fuso horário.
 - Não há desfazer genérico, só `undo` para reabrir uma tarefa concluída.
-- Testado em Linux. O CI roda em `ubuntu-latest`, e o comportamento em Windows e macOS não foi verificado.
+- Testado em Linux (CI) e em Windows com Git Bash. macOS não foi verificado.
 
 ## Testes
 
