@@ -1,0 +1,37 @@
+{
+  "name": "taskgraph",
+  "version": "0.1.0",
+  "description": "Lista de tarefas de linha de comando com dependências entre tarefas, prioridades e um planejador que sugere o que fazer primeiro.",
+  "type": "module",
+  "bin": {
+    "taskgraph": "dist/src/bin.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "tsc && node --test \"dist/tests/*.test.js\"",
+    "start": "node dist/src/bin.js"
+  },
+  "keywords": [
+    "todo",
+    "cli",
+    "typescript",
+    "grafo",
+    "tarefas"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.39.5",
+    "prettier": "^3.9.10",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.72.1"
+  }
+}
