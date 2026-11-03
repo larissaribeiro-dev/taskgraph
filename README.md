@@ -7,7 +7,7 @@
 
 Lista de tarefas de linha de comando em que as tarefas podem depender umas das outras. Uma tarefa só fica livre quando tudo o que ela espera estiver concluído, e o programa sugere o que fazer primeiro com base em prioridade, prazo e no quanto cada tarefa destrava das outras.
 
-O mais interessante é que a lista de tarefas é um grafo dirigido acíclico, o mesmo modelo de um `make`, de um pipeline de CI ou do `npm install`, em que um passo só roda depois que os anteriores terminam. O programa impede ciclos, calcula a ordem de execução por ordenação topológica e não tem nenhuma dependência em produção.
+A lista de tarefas é um grafo dirigido acíclico, o mesmo modelo de um `make`, de um pipeline de CI ou do `npm install`, em que um passo só roda depois que os anteriores terminam. O programa impede ciclos, calcula a ordem de execução por ordenação topológica e não tem nenhuma dependência em produção.
 
 ```
 $ taskgraph next
